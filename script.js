@@ -9,25 +9,25 @@ const DATOS_BANCARIOS = {
 // ----------------------------------------
 
 const CONFIG = {
-    whatsapp: "5219982141767",
-    whatsappAdicional: "5219982141767",
-    sitioWeb: "https://catmaniamx.com/",
-    facebook: "https://www.facebook.com/LoncheriaMaganaAgs",
-    instagram: "https://www.tripadvisor.com/",
-    maps: "https://maps.app.goo.gl/557uW3JY2ThC4mHm9", 
+    whatsapp: "5214491472336",
+    whatsappAdicional: "5214491472336",
+    sitioWeb: "https://demo-altpro.com/",
+    facebook: "https://www.facebook.com/?locale=es_LA",
+    instagram: "https://www.instagram.com/my_sing_studio/",
+    maps: "https://maps.app.goo.gl/L3Pq1dMVDgY9U5Qv9", 
     youtubeUrl: "https://www.youtube.com/watch?v=kQsSwEsjv2E",
     textos: {
-        cat1: { t: "QUIÉNES SOMOS", c: "Nacimos con una sola misión: ¡llevar las hamburguesas más deliciosas a tu mesa! Nos encanta consentirte con nuestro pan de receta original, ingredientes frescos y especialidades preparadas a la parrilla al momento. El lugar perfecto para compartir, reír y disfrutar de la mejor hamburguesa." },
-        cat2: { t: "ESTO NOS HACE DIFERENTES", c: "En nuestras sucursales servimos las hamburguesas hechas con recetas originales, acompañamientos deliciosos y bebidas bien frías. Además, contamos con servicio a domicilio para que disfrutes en casa, o puedes pedir directo en el mostrador para llevar" },
-        cat3: { t: "CLIENTES FELICES", c: "Nuestros clientes, tanto locales como los que nos visitan de fuera, nunca dejan de saborear nuestro exquisito menú, reconociendo la tradición y la calidad de nuestras hamburguesas en cada una de nuestras sucursales" }
+        cat1: { t: "QUIÉNES SOMOS", c: "Nacimos con una sola misión: ¡llevar los Pescados y Mariscos más deliciosos a tu mesa! Nos encanta consentirte con nuestras recetas originales, ingredientes frescos y especialidades preparadas a la parrilla al momento." },
+        cat2: { t: "ESTO NOS HACE DIFERENTES", c: "En nuestras sucursales servimos los mejores pesacdos y mariscos, con acompañamientos de deliciosas bebidas bien frías. Además, contamos con servicio a domicilio para que disfrutes en casa, o puedes pedir directo en el mostrador para llevar" },
+        cat3: { t: "CLIENTES FELICES", c: "Nuestros clientes, tanto locales como los que nos visitan de fuera, nunca dejan de saborear nuestro exquisito menú, reconociendo la tradición y la calidad de nuestros pescados y mariscos en cada una de nuestras sucursales" }
     },
     sucursales: {
-        suc1: { nombre: "Sucursal San Juan", wa: "5219982141767", maps: "https://maps.google.com/?q=San+Juan+de+los+Lagos" },
-        suc2: { nombre: "Sucursal HEB", wa: "5219982141767", maps: "https://maps.google.com/?q=HEB" },
-        suc3: { nombre: "Sucursal Nacozari", wa: "5219982141767", maps: "https://maps.google.com/?q=Nacozari" },
-        suc4: { nombre: "Sucursal Villerias", wa: "5219982141767", maps: "https://maps.google.com/?q=Villerias" },
-        suc5: { nombre: "Sucursal Centro", wa: "5219982141767", maps: "https://maps.google.com/?q=Centro" },
-        suc6: { nombre: "Sucursal Américas", wa: "5219982141767", maps: "https://maps.google.com/?q=Americas" }
+        suc1: { nombre: "Sucursal 1", wa: "5214491472336", maps: "https://maps.app.goo.gl/L3Pq1dMVDgY9U5Qv9" },
+        suc2: { nombre: "Sucursal 2", wa: "5214491472336", maps: "https://maps.app.goo.gl/L3Pq1dMVDgY9U5Qv9" },
+        suc3: { nombre: "Sucursal 3", wa: "5214491472336", maps: "https://maps.app.goo.gl/L3Pq1dMVDgY9U5Qv9" },
+        suc4: { nombre: "Sucursal 4", wa: "5214491472336", maps: "https://maps.app.goo.gl/L3Pq1dMVDgY9U5Qv9" },
+        suc5: { nombre: "Sucursal 5", wa: "5214491472336", maps: "https://maps.app.goo.gl/L3Pq1dMVDgY9U5Qv9" },
+        suc6: { nombre: "Sucursal 6", wa: "5214491472336", maps: "https://maps.app.goo.gl/L3Pq1dMVDgY9U5Qv9" }
     }
 };
 
