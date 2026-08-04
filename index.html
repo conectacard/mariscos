@@ -275,11 +275,63 @@
                 </div>
             </div>
 
-            <div class="mosaic-item share-block">
-                <button class="btn-magazine-share" onclick="shareExperienceRobust()">
-                    <i class="fas fa-share-alt"></i> RECOMIÉNDANOS Y COMPARTE
-                </button>
-            </div>
+            <div class="mosaic-item -block" style="display: flex; flex-direction: column; gap: 8px;">
+    <!-- Botón original de compartir (reducido un poco el padding también) -->
+    <button class="btn-magazine-share" style="padding: 10px;" onclick="shareExperienceRobust()">
+        <i class="fas fa-share-alt"></i> RECOMIÉNDANOS Y COMPARTE
+    </button>
+
+    <!-- Nuevo módulo automatizador de reseñas (Compactado) -->
+    <div style="background: #fafafa; padding: 8px; border-radius: 6px; border: 1px solid #eaeaea;">
+        <!-- Label más pequeño -->
+        <label for="clientWhatsapp" style="display: block; font-size: 0.75rem; font-weight: 600; color: #555; margin-bottom: 4px;">
+            ⭐ Califícanos en Maps (Escribe el Celular):
+        </label>
+        
+        <!-- Contenedor principal flex -->
+        <div style="display: flex; flex-direction: column; gap: 6px;">
+            <!-- Input más compacto -->
+            <input type="tel" id="clientWhatsapp" placeholder="Ej. 4491234567" style="width: 100%; box-sizing: border-box; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.9rem; outline: none;" />
+            
+            <!-- Botón más compacto y ancho completo -->
+            <button onclick="sendReviewWhatsApp()" style="width: 100%; box-sizing: border-box; background-color: #25D366; color: white; border: none; padding: 8px; border-radius: 4px; font-weight: 600; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                <i class="fab fa-whatsapp"></i> Enviar 5 Estrellas
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+function sendReviewWhatsApp() {
+    const phoneInput = document.getElementById('clientWhatsapp').value.trim();
+    
+    if (!phoneInput) {
+        alert('Por favor, ingresa el número de WhatsApp del cliente.');
+        return;
+    }
+
+    let cleanPhone = phoneInput.replace(/\D/g, '');
+    
+    if (cleanPhone.length === 10) {
+        cleanPhone = '52' + cleanPhone;
+    } else if (cleanPhone.length === 0) {
+        alert('Número inválido.');
+        return;
+    }
+
+    // Tu enlace de Maps actual
+    const googleMapsUrl = 'https://maps.app.goo.gl/9TNtm6o6JKLeprAk9'; 
+    
+    const message = encodeURIComponent(
+        "¡Hola! Muchas gracias por visitarnos hoy. Nos encantaría saber qué tal fue tu experiencia. ¿Nos regalarías 5 estrellas en Google Maps? Solo haz clic aquí: " + googleMapsUrl
+    );
+
+    const whatsappUrl = `https://wa.me/${cleanPhone}?text=${message}`;
+    
+    // Abrir en una nueva pestaña
+    window.open(whatsappUrl, '_blank');
+}
+</script>
            
             <!-- NUEVO BOTÓN DE ACCESO AL ASISTENTE RÁPIDO -->
             <div class="mosaic-item">
